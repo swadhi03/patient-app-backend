@@ -13,7 +13,7 @@ app.use(express.json())
 
 
 //api for Admin Sign up
-app.post("/adminsignin", (req,res)=>{
+app.post("/adminsignup", (req,res)=>{
     let input=req.body
     let hashedPassword= bcrypt.hashSync(input.password,10)
     //console.log(hashedPassword)
